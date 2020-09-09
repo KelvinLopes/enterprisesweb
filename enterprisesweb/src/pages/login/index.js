@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { useHistory, withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import api from '../../services/api';
 
@@ -13,20 +13,22 @@ const history = useHistory();
 
 const [email, setEmail] = useState('testeapple@ioasys.com.br');
 const [password, setPassword] = useState('12341234');
+const [textError, setTextError] = useState('');
+
+function clearErrorMsg() {
+        setTextError('');
+    }
 
 async function handleSingIn(event) {
     event.preventDefault();
 
-  
+  try {
     const response = await api.post('users/auth/sign_in', {
         email,
         password,
      },)
 
-     if(!email || !password) {
-         console.log('Dados invalidos')
-     }
-
+   
     login(
       response.headers['access-token'],
       response.headers['client'],
@@ -35,8 +37,13 @@ async function handleSingIn(event) {
     
     history.push('/home');
 
+  }catch(error) {
+      setTextError('Credenciais informadas são invalidas, tente novamente');
+      setTimeout(() => {
+          clearErrorMsg();
+      }, 5000);
+  }
 }
-
     return(
         <main>
             <form onSubmit={handleSingIn}>
@@ -64,6 +71,9 @@ async function handleSingIn(event) {
                     </button>
                 </fieldset>
             </form>
+            <div id="errorMsg"> 
+                <span>{textError}</span>
+            </div>
         </main>
     );
 }

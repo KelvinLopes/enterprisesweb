@@ -9,6 +9,7 @@ import PageLogin from './pages/login';
 import PageHome from './pages/home';
 import PageEnterprise from './pages/enterprise';
 
+
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route 
     {...rest}

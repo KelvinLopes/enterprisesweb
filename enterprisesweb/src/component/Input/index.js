@@ -1,12 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import api from '../../services/api';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { getToken, getClient, getUid } from '../../services/auth';
 
 export default function FilteringEnterprises() {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [ searchResults, setSearchResults ] = useState([]);
+  
+  const history = useHistory();
 
   const handleInputChange = event => {
     setSearchTerm(event.target.value);
@@ -15,18 +17,19 @@ export default function FilteringEnterprises() {
     useEffect(() => {
         async function FilterEnterprises() {
 
-       const response = await api.get(`enterprises?enterprise_types=1&name=${searchTerm}`,
+       const response = await api.get('enterprises',
         { method: 'GET', headers: { 'Content-Type': 'application/json',
         'access-token': getToken(),
         'client': getClient(),
         'uid': getUid(), 
         }});
 
-      const data = response.data.enterprises;
-
-
+        const data = response.data.enterprises.map(enterprise => ({
+      ...enterprise,
+    }));
+    
         const results =
-            data.filter(enterprise => (
+            await data.filter(enterprise => (
             enterprise.enterprise_name.includes(searchTerm)
             ||
             enterprise.enterprise_name.toLowerCase().includes(searchTerm)
@@ -44,14 +47,21 @@ export default function FilteringEnterprises() {
     }, [searchTerm]);
 
 
+    async function handleSubmit(event) {
+        event.preventDefault();
+        history.push(`/enterprise/${searchTerm}`);
+    }    
+
     return (
         <main>
-        <form>
+        <form onSubmit={handleSubmit}>
             <input
             className="input"
             type="text"
             placeholder="Procure por uma empresa"
-             value={searchTerm} onChange={(event) => {setSearchTerm(event.target.value)}}
+            value={searchTerm}
+            onChange={handleInputChange}
+             //value={searchTerm} onChange={(event) => {setSearchTerm(event.target.value)}}
             />
 
             <button type="submit">Pesquisar</button>

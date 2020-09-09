@@ -6,6 +6,8 @@ import { getToken, getClient, getUid } from '../../services/auth';
 
 import { Link } from 'react-router-dom';
 
+import Input from '../../component/Input';
+
 export default function Home() {
 
 const [enterprises, setEnterprises] = useState([]);
@@ -13,7 +15,7 @@ const [enterprises, setEnterprises] = useState([]);
 
 useEffect(() =>  {
 
-  async function renderEnterprises() {
+  async function RenderEnterprises() {
 
     const response = await api.get('enterprises',
       { method: 'GET', headers: { 'Content-Type': 'application/json',
@@ -26,12 +28,16 @@ useEffect(() =>  {
       ...enterprise,
     }));
   setEnterprises(data);
+
 }
-  renderEnterprises()
+  RenderEnterprises()
 
 }, []);
 
     return (
+        <>
+        <Input /> 
+            
         <main>
             
             { enterprises.map(enterprise => (
@@ -48,6 +54,6 @@ useEffect(() =>  {
                     </div>
                 ))}
         </main>
-
+    </>
     );
 }

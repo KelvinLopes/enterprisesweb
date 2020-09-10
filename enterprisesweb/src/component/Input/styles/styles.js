@@ -117,7 +117,7 @@ export const Card = styled.section`
   top: 140px;
   margin-bottom: 30px;
 
-  width: 80%;
+  width: 90%;
   heigth: auto;
   background: #f5f5f5;
   border: 1px #fff solid;

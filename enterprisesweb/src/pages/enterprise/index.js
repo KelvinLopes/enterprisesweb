@@ -6,6 +6,10 @@ import { getToken, getClient, getUid } from '../../services/auth';
 
 import { Link, useParams } from 'react-router-dom';
 
+import {Container, Content, Header, Title } from './styles/styles';
+
+import { MdArrowBack } from 'react-icons/md';
+
 export default function Enterprise() {
 
 const [enterprises, setEnterprises] = useState([]);
@@ -33,14 +37,29 @@ useEffect(() =>  {
 }, [id]);
 
     return (
-        <main>          
-            <div>
-                <img src={`https://empresas.ioasys.com.br${enterprises.photo}`} alt={enterprises.enterprise_name} />
-                <h1>{enterprises.enterprise_name}</h1>
-                <p>{enterprises.description}</p>
-                <p>{enterprises.city}</p>
-                <p>{enterprises.country}</p>
-            </div>
-        </main>
+        <>
+        <Header> 
+            <>
+           <Link to='/enterprises/list'>
+            <MdArrowBack className="icon-back"
+              size={25}
+              color="#fff"
+              cursor="pointer"
+              />
+            </Link>
+            <Title>{enterprises.enterprise_name}</Title>
+          </> 
+        </Header>
+
+            <Container>
+            <main>          
+                <Content>
+                    <img src={`https://empresas.ioasys.com.br${enterprises.photo}`} alt={enterprises.enterprise_name} />
+                    <h1>{enterprises.enterprise_name}</h1>
+                    <p>{enterprises.description}</p>
+                </Content>
+            </main>
+            </Container>
+        </>
     );
 }

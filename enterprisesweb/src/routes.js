@@ -8,6 +8,7 @@ import { isAuthenticated } from './services/auth';
 import PageLogin from './pages/login';
 import PageHome from './pages/home';
 import PageEnterprise from './pages/enterprise';
+import PageEnterpriseList from './pages/enterprisesList';
 
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -29,6 +30,7 @@ const Routes = () => (
         <Switch>
             <Route exact path='/' component={PageLogin} />
              <PrivateRoute exact  path="/home" component={PageHome} />
+             <PrivateRoute exact  path="/enterprises/list" component={PageEnterpriseList} />
              <PrivateRoute exact  path="/enterprise/:id" component={PageEnterprise} />
         </Switch>
     </BrowserRouter>

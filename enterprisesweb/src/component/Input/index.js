@@ -7,6 +7,7 @@ export default function FilteringEnterprises() {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [ searchResults, setSearchResults ] = useState([]);
+  const [textError, settextError] = useState('Sua busca não retornou resultado.');
   
   const history = useHistory();
 
@@ -17,6 +18,7 @@ export default function FilteringEnterprises() {
     useEffect(() => {
         async function FilterEnterprises() {
 
+    try{
        const response = await api.get('enterprises',
         { method: 'GET', headers: { 'Content-Type': 'application/json',
         'access-token': getToken(),
@@ -38,18 +40,21 @@ export default function FilteringEnterprises() {
 
             )
         );
+
         setSearchResults(data);
         setSearchResults(results);
 
-        return response.data;
+        }catch(error){
+            settextError('Sua busca não retornou resultado.');
         }
+    }
         FilterEnterprises();
     }, [searchTerm]);
 
 
     async function handleSubmit(event) {
         event.preventDefault();
-        history.push(`/enterprise/${searchTerm}`);
+        history.push(`/enterprises/list`);
     }    
 
     return (
@@ -61,12 +66,14 @@ export default function FilteringEnterprises() {
             placeholder="Procure por uma empresa"
             value={searchTerm}
             onChange={handleInputChange}
-             //value={searchTerm} onChange={(event) => {setSearchTerm(event.target.value)}}
             />
 
             <button type="submit">Pesquisar</button>
-        </form>    
-                { searchResults.map(enterprise => (
+        </form>  
+            { 
+            textError ? 
+            (
+                 searchResults.map(enterprise => (
                         <div key={enterprise.id}>
                             <img src={`https://empresas.ioasys.com.br${enterprise.photo}`} alt={enterprise.enterprise_name} />
                             <h1>{enterprise.enterprise_name}</h1>
@@ -78,7 +85,8 @@ export default function FilteringEnterprises() {
                                 <h1>{enterprise.enterprise_name}</h1>
                             </Link>
                         </div>
-                    ))}
+                    ))
+            ) : ( <div>{textError}</div> )  }
             </main>
     );
 }

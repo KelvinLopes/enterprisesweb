@@ -32,4 +32,8 @@ export default createGlobalStyle`
     ::-webkit-scrollbar-thumb {
     background: rgba(238, 76, 119, 0.5);
     }
+
+    a {
+      text-decoration: none;
+    }
 `;

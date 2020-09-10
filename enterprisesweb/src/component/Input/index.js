@@ -3,6 +3,8 @@ import api from '../../services/api';
 import { Link, useHistory } from 'react-router-dom';
 import { getToken, getClient, getUid } from '../../services/auth';
 
+import { Input, Container, Header, Form, Main, Card, Description} from './styles/styles'
+
 export default function FilteringEnterprises() {
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -58,9 +60,11 @@ export default function FilteringEnterprises() {
     }    
 
     return (
-        <main>
-        <form onSubmit={handleSubmit}>
-            <input
+
+        <Container>
+        <Header>    
+        <Form onSubmit={handleSubmit}>
+            <Input
             className="input"
             type="text"
             placeholder="Procure por uma empresa"
@@ -69,24 +73,32 @@ export default function FilteringEnterprises() {
             />
 
             <button type="submit">Pesquisar</button>
-        </form>  
+        </Form>  
+        </Header>
+
+         <Main>
             { 
             textError ? 
             (
                  searchResults.map(enterprise => (
-                        <div key={enterprise.id}>
-                            <img src={`https://empresas.ioasys.com.br${enterprise.photo}`} alt={enterprise.enterprise_name} />
-                            <h1>{enterprise.enterprise_name}</h1>
-                            <p>{enterprise.city}</p>
-                            <p>{enterprise.country}</p>
+                        <Card key={enterprise.id}>
+                            <img 
+                            className="card-img"
+                            src={`https://empresas.ioasys.com.br${enterprise.photo}`} 
+                            alt={enterprise.enterprise_name} />
+                            <Description>
                                 <Link
-                                to={`/enterprise/${enterprise.id}`}
-                            >
-                                <h1>{enterprise.enterprise_name}</h1>
-                            </Link>
-                        </div>
+                                    to={`/enterprise/${enterprise.id}`}
+                                >
+                                    <h1>{enterprise.enterprise_name}</h1>
+                                </Link>
+                                <p>{enterprise.city}</p>
+                                <p>{enterprise.country}</p>
+                            </Description>
+                        </Card>
                     ))
             ) : ( <div>{textError}</div> )  }
-            </main>
+            </Main>
+        </Container>    
     );
 }

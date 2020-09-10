@@ -76,6 +76,11 @@ export const Content= styled.section`
       justify-content: center;
       font-size: 1.125rem;
       font-family: 'Source Sans Pro', sans-serif;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
       color: #8d8c8c;
       margin: 30px auto;
   }
@@ -90,7 +95,6 @@ export const Content= styled.section`
     height: 45vh;
     margin: 30px auto;
     border-radius: 4px;
-
     }
 
      @media screen and (max-width:600px) {
@@ -100,8 +104,13 @@ export const Content= styled.section`
 
   export const Title = styled.h1`
   
-  font-family: Roboto-Regular;
-  font-size: 1.125rem;
+  font-family: Roboto;
+  font-size: 2.125rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
   color: #fff;
   width: 100%;
   

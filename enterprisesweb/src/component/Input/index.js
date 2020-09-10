@@ -3,7 +3,8 @@ import api from '../../services/api';
 import { Link, useHistory } from 'react-router-dom';
 import { getToken, getClient, getUid } from '../../services/auth';
 
-import { Input, Container, Header, Form, Main, Card, Description} from './styles/styles'
+import { Input, Container, Header, Form, Main, Card, Description, Img} from './styles/styles'
+import { MdSearch, MdClose } from 'react-icons/md';
 
 export default function FilteringEnterprises() {
 
@@ -61,9 +62,17 @@ export default function FilteringEnterprises() {
 
     return (
 
-        <Container>
-        <Header>    
+    <Container>
+        <Header>
+        <>
         <Form onSubmit={handleSubmit}>
+             <MdSearch onClick={handleSubmit}
+              color="#fff"
+              size={30}
+              cursor="pointer"
+              className="search"
+              objectfit="contain"
+            />     
             <Input
             className="input"
             type="text"
@@ -71,9 +80,16 @@ export default function FilteringEnterprises() {
             value={searchTerm}
             onChange={handleInputChange}
             />
-
-            <button type="submit">Pesquisar</button>
-        </Form>  
+             <Link to='/home'>
+            <MdClose className="icon-close"
+                size={30}
+                objectfit="contain"
+                color="#fff"
+                cursor="pointer"
+                />
+            </Link>  
+        </Form>   
+        </>
         </Header>
 
          <Main>
@@ -82,7 +98,7 @@ export default function FilteringEnterprises() {
             (
                  searchResults.map(enterprise => (
                         <Card key={enterprise.id}>
-                            <img 
+                            <Img
                             className="card-img"
                             src={`https://empresas.ioasys.com.br${enterprise.photo}`} 
                             alt={enterprise.enterprise_name} />
@@ -92,8 +108,8 @@ export default function FilteringEnterprises() {
                                 >
                                     <h1>{enterprise.enterprise_name}</h1>
                                 </Link>
-                                <p>{enterprise.city}</p>
-                                <p>{enterprise.country}</p>
+                                <h2>{enterprise.city}</h2>
+                                <h3>{enterprise.country}</h3>
                             </Description>
                         </Card>
                     ))

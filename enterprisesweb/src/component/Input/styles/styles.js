@@ -6,15 +6,22 @@ export const Container= styled.div`
   width: 100%;
   max-width: 100vw;
   min-heigth: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
 
-  .card-img {
-      left: 0;
-      right: 0;
+  .icon-close:hover {
+    border-radius: 50%;
+    background: #000;
+    opacity: 0.5; 
+  }
+  .search:hover {
+    border-radius: 50%;
+    background: #000;
+    opacity: 0.5; 
   }
 
 `;
@@ -25,6 +32,7 @@ export const Header = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  bottom: 2rem;
 
   width: 100vw;
   height: 25vh;
@@ -40,6 +48,19 @@ svg {
   justify-content: center;
   flex-direction: row;
 }
+`;
+
+export const Img = styled.img`
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start-flex;
+    
+    object-fit: contain;
+    width: 30rem;
+    height: 15rem;
+
 `;
 
 export const Form = styled.form`
@@ -60,10 +81,12 @@ export const Input = styled.input`
   justify-content: center;
   position: relative;
   background: none;
-  width: 90%;
-  height: 12px;
+
+  width: 55rem;
+  
   margin-top: 35px;
-  padding: 10px 25px 15px;
+  bottom: 10px;
+ 
   font-size: 19px;
   text-align: left;
   font-family: 'Roboto', sans-serif;
@@ -80,6 +103,7 @@ export const Input = styled.input`
   border-top: none;
   border-left: none;
   border-right: none;
+  
   &::placeholder {
     width: 100%;
     padding: 10px 20px;
@@ -91,8 +115,16 @@ export const Input = styled.input`
     line-height: normal;
     font-family: 'Roboto', sans-serif;
   }
-  @media screen and (max-width:600px) {
-    width: 80%;
+  @media screen and (max-width:960px) {
+    width: 30rem;
+  }
+
+  @media screen and (max-width:800px) {
+    width: 20rem;
+  }
+
+  @media screen and (max-width:400px) {
+    width: 15rem;
   }
 `;
 
@@ -103,7 +135,9 @@ export const Main = styled.main`
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 40px;
+  top: 4rem;
+
+  widdth: 100vw;
 `;
 
 
@@ -114,7 +148,7 @@ export const Card = styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 140px;
+  top: 10rem;
   margin-bottom: 30px;
 
   width: 90%;
@@ -144,10 +178,47 @@ export const Description = styled.div`
   padding: 5px;
   font-size: 0.8rem;
 
+  
+  font-family: 'Roboto', sans-serif;
+  
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal
+
   h1 {
+      font-size: 1.875rem;
       color: #1a0e49;
-      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
   }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #8d8c8c;
+    font-weight: normal;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    color: #8d8c8c;
+    font-weight: normal;
+  }
+
+  a {
+     color: #1a0e49;
+    }
+
+  h1:hover {
+    color: #8d8c8c;
+  }
+
+  h1:active {
+    color: #1a0e49;
+  }
+
+  h1:visited {
+     color: #1a0e49;
+   }
 
    @media screen and (max-width:700px) {
    

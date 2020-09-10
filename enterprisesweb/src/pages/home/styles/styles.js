@@ -77,7 +77,6 @@ export const Information = styled.h1`
   width: 34.125rem;
   
   
-
   @media screen and (max-width:600px) {
     font-size: 1.5em;
  }

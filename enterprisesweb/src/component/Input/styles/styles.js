@@ -61,6 +61,11 @@ export const Img = styled.img`
     width: 30rem;
     height: 15rem;
 
+    @media screen and (max-width:700px) {
+    width: 20rem;
+    height: 10rem;
+  }
+
 `;
 
 export const Form = styled.form`

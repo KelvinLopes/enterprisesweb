@@ -6,6 +6,17 @@ import api from '../../services/api';
 
 import { login } from '../../services/auth';
 
+import logo from '../../assets/imgs/logo-home.png';
+
+import { 
+  MdMailOutline,
+  MdLockOutline,
+  MdVisibility,
+  MdVisibilityOff,
+} from 'react-icons/md';
+
+import { Form, Input, Container, SubmitButton, Error, TextButton } from './styles/styles';
+
 
 function Login() {
 
@@ -45,36 +56,48 @@ async function handleSingIn(event) {
   }
 }
     return(
+        <>
+        <Container>
         <main>
-            <form onSubmit={handleSingIn}>
+            <Form onSubmit={handleSingIn}>
+                <img src={logo} alt="logo" />
+                 <h1>Bem vindo ao Empresas</h1>
+                <p>
+                Lorem ipsum dolor sit amet,
+                contetur adipiscing elit. 
+                Nunc accumsan.
+                </p>
+
                 <fieldset>
-                    <legend>Email:</legend>
-                    <input 
+                    <Input 
                         name="email"
                         label="Email"
                         type="email"
                         value={email} onChange={(event) => {setEmail(event.target.value)}}
+                        placeholder="Email"
                     />
 
-                    <legend>Senha:</legend>
-                    <input 
+                    <Input 
                         name="password"
                         label="Password"
                         type="password"
                         value={password} onChange={(event) => {setPassword(event.target.value)}}
+                        placeholder="Senha"
                     />
                 </fieldset>
 
                 <fieldset>
-                    <button type="submit">
-                        Entrar
-                    </button>
+                    <SubmitButton type="submit">
+                        <TextButton><h1>Entrar</h1></TextButton>
+                    </SubmitButton>
                 </fieldset>
-            </form>
-            <div id="errorMsg"> 
-                <span>{textError}</span>
+            </Form>
+            <div> 
+                <Error>{textError}</Error>
             </div>
         </main>
+        </Container>
+        </>
     );
 }
 

@@ -10,7 +10,7 @@ export default function FilteringEnterprises() {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [ searchResults, setSearchResults ] = useState([]);
-  const [textError, settextError] = useState('Sua busca não retornou resultado.');
+  const [textError, settextError] = useState('Nenhuma empresa foi encontrada para a busca realizada.');
   
   const history = useHistory();
 
@@ -44,11 +44,16 @@ export default function FilteringEnterprises() {
             )
         );
 
+        if(searchTerm !== data) {
+         console.log('Nenhuma empresa foi encontrada para a busca realizada.')
+        }
+
         setSearchResults(data);
         setSearchResults(results);
 
+        
         }catch(error){
-            settextError('Sua busca não retornou resultado.');
+        settextError('Nenhuma empresa foi encontrada para a busca realizada.');
         }
     }
         FilterEnterprises();
@@ -71,7 +76,6 @@ export default function FilteringEnterprises() {
               size={30}
               cursor="pointer"
               className="search"
-              objectfit="contain"
             />     
             <Input
             className="input"
@@ -83,7 +87,6 @@ export default function FilteringEnterprises() {
              <Link to='/home'>
             <MdClose className="icon-close"
                 size={30}
-                objectfit="contain"
                 color="#fff"
                 cursor="pointer"
                 />
@@ -94,7 +97,7 @@ export default function FilteringEnterprises() {
 
          <Main>
             { 
-            textError ? 
+            textError ?
             (
                  searchResults.map(enterprise => (
                         <Card key={enterprise.id}>
@@ -113,7 +116,7 @@ export default function FilteringEnterprises() {
                             </Description>
                         </Card>
                     ))
-            ) : ( <div>{textError}</div> )  }
+            ) : ( <div>{textError}</div> )}
             </Main>
         </Container>    
     );

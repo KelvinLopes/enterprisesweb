@@ -3,7 +3,7 @@
 
 <p>
   Navegue e pesquise por uma lista de empresas.
-  Você também pode ver os detalhes sober cada uma clicando no nome dela.
+  Você também pode ver os detalhes sobre cada uma clicando no nome dela.
  </p> 
  
  

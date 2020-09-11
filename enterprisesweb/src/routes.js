@@ -9,6 +9,7 @@ import PageLogin from './pages/login';
 import PageHome from './pages/home';
 import PageEnterprise from './pages/enterprise';
 import PageEnterpriseList from './pages/enterprisesList';
+import PageNotFound from './pages/pageNotFound';
 
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -32,6 +33,7 @@ const Routes = () => (
              <PrivateRoute exact  path="/home" component={PageHome} />
              <PrivateRoute exact  path="/enterprises/list" component={PageEnterpriseList} />
              <PrivateRoute exact  path="/enterprise/:id" component={PageEnterprise} />
+             <Route path="*" component={PageNotFound} />
         </Switch>
     </BrowserRouter>
 )

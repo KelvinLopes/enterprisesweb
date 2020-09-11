@@ -1,5 +1,5 @@
 
-import styled, { keyframes, css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Container= styled.div`
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');

@@ -71,7 +71,7 @@ export default function FilteringEnterprises() {
         <Header>
         <>
         <Form onSubmit={handleSubmit}>
-             <MdSearch onClick={handleSubmit}
+             <MdSearch onClick={() => {}}
               color="#fff"
               size={30}
               cursor="pointer"

@@ -1,15 +1,4 @@
-import styled, { keyframes, css} from 'styled-components';
-
-
-const rotate = keyframes`
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    `
-    ;
+import styled from 'styled-components';
 
 export const Container= styled.div`
 
@@ -78,7 +67,7 @@ h1 {
 }
 
 img {
-    margin: 0.9rem auto;
+    margin: 0.4rem auto;
 }
 
 p {
@@ -86,7 +75,7 @@ p {
   width: 60%;
   height: auto;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 1.125rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -94,10 +83,6 @@ p {
   letter-spacing: -0.13px;
   text-align: center;
   color: #383743;
-}
-
-.rotate-login {
-  animation: ${rotate} 2s linear infinite;
 }
 
 fieldset {
@@ -126,7 +111,7 @@ export const Input = styled.input`
   width: 100%;
   height: 12px;
   margin-top: 55px;
-  padding: 10px 25px;
+  padding: 10px 30px;
 
   font-size: 19px;
   text-align: left;
@@ -172,7 +157,7 @@ export const SubmitButton = styled.button`
   border: none;
   background: #57bbbc;
 
-  margin: 2rem auto;
+  margin: -0.8rem auto;
 
   &:hover {
     opacity: 0.5;
@@ -220,7 +205,8 @@ export const Error = styled.h2`
   flex: 1 0 auto;
   position: relative;
   
-  bottom: 1rem;
+  bottom: 1.2rem;
+  padding: 1.5rem;
 
   text-align: center;
   color: #ff0f44;

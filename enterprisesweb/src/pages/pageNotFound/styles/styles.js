@@ -60,17 +60,7 @@ export const Content= styled.section`
   background: #fff;
   border-radius: 4px;
 
-  h1 {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 30px;
-    color: #1a0e49;
-    font-family: 'Roboto', sans-serif;
-  }
-
+ 
   p {
       width: 90%;
       display: flex;
@@ -85,6 +75,7 @@ export const Content= styled.section`
       letter-spacing: normal;
       color: #8d8c8c;
       margin: 30px auto;
+      text-align: center;
   }
 
   img {
@@ -107,7 +98,7 @@ export const Content= styled.section`
   export const Title = styled.h1`
   
   font-family: Roboto;
-  font-size: 2.125rem;
+  font-size: 1rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;

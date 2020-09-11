@@ -6,6 +6,14 @@
   Você também pode ver os detalhes sobre cada uma clicando no nome dela.
  </p> 
  
+ ### Você também pode executar o projeto no GitPod:
+ 
+ [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/KelvinLopes/newenterprisesweb)
+ 
+ ### Dicas
+ 
+ Rode no terminal o comando  ``` yarn ``` , para instalar/ atualizar as dependências, caso precisar rode ``` yarn upgrade ```.
+ 
  
  # Screenshots 🖼️
   

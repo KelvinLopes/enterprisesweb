@@ -10,51 +10,48 @@
  # Screenshots 🖼️
   
  <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.11.png?raw=true"      width="320" heigth="320" align="center" alt="Tela de login"/>
+  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.11.png?raw=true"      width="400" heigth="400" align="center" alt="Tela de login"/>
  </p>
  
   <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.24.png?raw=true"      width="320" heigth="320" align="center" alt="Page Login show password"/>
+  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.24.png?raw=true"      width="400" heigth="400" align="center" alt="Page Login show password"/>
  </p>
  
   <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.30.png?raw=true"      width="320" heigth="320" align="center" alt="Tela de login com loading"/>
+  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.30.png?raw=true"      width="400" heigth="400" align="center" alt="Tela de login com loading"/>
  </p>
  
    <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.36.png?raw=true"      width="320" heigth="320" align="center" alt="Página Homer"/>
+  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.36.png?raw=true"      width="400" heigth="400" align="center" alt="Página Homer"/>
  </p>
   
   <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.48.png?raw=true"      width="320" heigth="320" align="center" alt="Página de pesquisa"/>
+  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.48.png?raw=true"      width="400" heigth="400" align="center" alt="Página de pesquisa"/>
  </p>
  
    <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.21.11.png?raw=true"      width="320" heigth="320" align="center" alt="Página de pesquisa"/>
+  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.21.11.png?raw=true"      width="400" heigth="400" align="center" alt="Página de pesquisa"/>
  </p>
  
   <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.56.png?raw=true"      width="320" heigth="320" align="center" alt="Filtrando empresas"/>
+  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.56.png?raw=true"      width="400" heigth="400" align="center" alt="Filtrando empresas"/>
  </p>
  
   <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.19.39.png?raw=true"      width="320" heigth="320" align="center" alt="Vendo os detalhes da empresa"/>
+  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.19.39.png?raw=true"      width="400" heigth="400" align="center" alt="Vendo os detalhes da empresa"/>
  </p>
  
   <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.20.10.png?raw=true"      width="320" heigth="320" align="center" alt="Layout responsivo"/>
+  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.20.10.png?raw=true"      width="400" heigth="400" align="center" alt="Layout responsivo"/>
  </p>
  
-  <p align="center"> 
-  <img src=""      width="320" heigth="320" align="center" alt=""/>
- </p>
  
   <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.20.22.png?raw=true"      width="320" heigth="320" align="center" alt="Layout responsivo"/>
+  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.20.22.png?raw=true"      width="400" heigth="400" align="center" alt="Layout responsivo"/>
  </p>
  
  <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.21.48.png?raw=true"      width="320" heigth="320" align="center" alt="Error 404"/>
+  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.21.48.png?raw=true"      width="400" heigth="400" align="center" alt="Error 404"/>
  </p>
  
  <p>

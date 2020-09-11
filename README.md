@@ -12,7 +12,7 @@
  
  ### Dicas
  
- Rode no terminal o comando  ``` yarn ``` , para instalar/ atualizar as dependências, caso precisar rode ``` yarn upgrade ```.
+ No terminal acesse o diretŕoio enterprisesweb e rode o comando  ``` yarn ``` , para instalar/ atualizar as dependências, caso precisar rode ``` yarn upgrade ```.
  
  
  # Screenshots 🖼️

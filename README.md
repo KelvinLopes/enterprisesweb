@@ -6,30 +6,15 @@
   Você também pode ver os detalhes sobre cada uma clicando no nome dela.
  </p> 
  
- ### Você também pode executar o projeto no GitPod:
- 
- [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/KelvinLopes/newenterprisesweb)
  
  ### Dicas
  
  No terminal acesse o diretŕoio enterprisesweb e rode o comando  ``` yarn ``` , para instalar/ atualizar as dependências, caso precisar rode ``` yarn upgrade ```.
  
  
- # Screenshots 🖼️
-  
- <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.11.png?raw=true"      width="400" heigth="400" align="center" alt="Tela de login"/>
- </p>
+ # Screenshots 🖼️   
  
-  <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.24.png?raw=true"      width="400" heigth="400" align="center" alt="Page Login show password"/>
- </p>
- 
-  <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.30.png?raw=true"      width="400" heigth="400" align="center" alt="Tela de login com loading"/>
- </p>
- 
-   <p align="center"> 
+<p align="center"> 
   <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.18.36.png?raw=true"      width="400" heigth="400" align="center" alt="Página Homer"/>
  </p>
   

@@ -73,11 +73,3 @@
 * Axios
 * React Icons
 * Styles Components
-
-### Agradecimentos
-
-<p>
-  Independente do resultado, fico feliz pela oportunidade que me foi porporcionada, confesso que aprendi muito enquanto 
-  desenvolvia esse projeto e me senti util e motivado em continuar em busca de conhecimento e inovação daquilo que já aprendi.
-  Eu ainda gostaria de acrescentar alguns recursos para enriquecer a experiência do(a) usuário(a) na interface e ver se combina com o Enterprises Web.
-</p>

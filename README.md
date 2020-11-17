@@ -42,13 +42,9 @@
   <p align="center"> 
   <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.20.22.png?raw=true"      width="400" heigth="400" align="center" alt="Layout responsivo"/>
  </p>
- 
- <p align="center"> 
-  <img src="https://github.com/KelvinLopes/newenterprisesweb/blob/master/enterprisesweb/Screenshots/Screenshot%202020-09-10%20at%2022.21.48.png?raw=true"      width="400" heigth="400" align="center" alt="Error 404"/>
- </p>
- 
+  
  <p>
-    Interface responsiva que visa ser funcional e agradavél em muitos tipos de tela.
+    Layout responsivo.
  </p>
 
 
